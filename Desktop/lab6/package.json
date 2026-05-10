@@ -1,0 +1,27 @@
+{
+  "name": "lab6-spec-testing",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "jest",
+    "test:unit": "jest tests/unit",
+    "test:integration": "jest tests/integration",
+    "test:e2e": "jest tests/e2e",
+    "test:coverage": "jest --coverage",
+    "test:mutation": "stryker run"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.26.0",
+    "@stryker-mutator/core": "^8.5.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.15.18",
+    "eslint": "^9.26.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.31.0"
+  }
+}
